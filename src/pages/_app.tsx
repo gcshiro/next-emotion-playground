@@ -2,7 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 
+import { ThemeProvider } from '@emotion/react';
 import GlobalStyle from '@/styles/global';
+import { theme } from '@/styles/designToken/theme';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
@@ -12,8 +14,11 @@ const App = ({ Component, pageProps }: AppProps) => {
         <title>emotion example</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      {GlobalStyle}
-      <Component {...pageProps} />
+
+      <ThemeProvider theme={theme}>
+        {GlobalStyle}
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   );
 };

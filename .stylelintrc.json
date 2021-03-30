@@ -4,6 +4,6 @@
     "stylelint-config-recess-order"
   ],
   "rules": {
-
+    "no-missing-end-of-source-newline": null
   }
 }

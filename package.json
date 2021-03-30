@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "next dev",
+    "build": "next build && next export -o docs",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
