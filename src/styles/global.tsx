@@ -7,6 +7,10 @@ const style = css`
     margin: 0;
   }
 
+  body {
+    background-color: #e7e7e7;
+  }
+
   h1,
   h2,
   h3,

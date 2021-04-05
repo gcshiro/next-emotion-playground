@@ -4,6 +4,7 @@
     "stylelint-config-recess-order"
   ],
   "rules": {
-    "no-missing-end-of-source-newline": null
+    "no-missing-end-of-source-newline": null,
+    "property-no-unknown": null
   }
 }
